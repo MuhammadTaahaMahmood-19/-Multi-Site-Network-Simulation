@@ -1,2 +1,13 @@
-# -Multi-Site-Network-Simulation
-Configured a simulated network connecting four sites: Chicago, Mexico, Vancouver, and Toronto. Implemented VLANs, inter-VLAN routing, and EtherChannel using LACP and PAgP to support network segmentation and link aggregation. Configured OSPF and BGP routing, enabled SSH management access, and troubleshot connectivity 
+This project involved configuring a simulated network connecting four sites: Chicago, Mexico, Vancouver, and Toronto, using Cisco Packet Tracer. The aim was to practise integrating switching, routing, and remote management features within a multi-site environment. Each location formed part of a wider network, requiring careful configuration to allow devices to communicate within their own site and across different locations.
+
+I implemented Virtual Local Area Networks (VLANs) to divide the network into separate logical segments. This provided a structured way to organize devices and practise network segmentation. Inter-VLAN routing enabled communication between these segments where required. Working with VLANs and routing together helped me understand how logical separation affects connectivity and how switches and routers cooperate to move traffic between networks.
+
+The project also included EtherChannel configuration using both the Link Aggregation Control Protocol (LACP) and Port Aggregation Protocol (PAgP). These configurations combined multiple physical connections into logical links. Implementing both protocols provided practical experience with their configuration differences and the importance of compatible settings between connected switches.
+
+For routing, I configured Open Shortest Path First (OSPF) and Border Gateway Protocol (BGP). This allowed me to practise establishing routing relationships and exchanging network reachability information within the simulated topology. Integrating these protocols required attention to interface addressing, neighbour configuration, and the routes needed to reach remote destinations.
+
+I also enabled Secure Shell (SSH) access for encrypted remote device management. This introduced a management component alongside the switching and routing configuration and reinforced the importance of considering administrative access when building a network.
+
+Throughout the project, I troubleshot connectivity using interface checks and end-to-end ping tests. Interface checks helped identify whether connections were operational, while ping tests helped verify whether traffic could reach its intended destination. When connectivity failed, I reviewed the relevant settings and repeated the tests after making changes.
+
+Overall, this simulation strengthened my practical understanding of multi-site networking and the relationships between individual configuration tasks. It brought together VLANs, inter-VLAN routing, link aggregation, dynamic routing, and remote management in one environment. It also reinforced a systematic troubleshooting approach: checking the network step by step and verifying that configuration changes produced the expected connectivity.
